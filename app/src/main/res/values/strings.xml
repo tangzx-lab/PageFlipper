@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">翻页笔</string>
+    <string name="status_default">未连接。请输入电脑的 IP 和端口</string>
+    <string name="ip_hint">电脑 IP（如 192.168.1.100）</string>
+    <string name="port_hint">端口（默认 7777）</string>
+    <string name="port_default">7777</string>
+    <string name="connect">连接</string>
+    <string name="disconnect">断开</string>
+    <string name="prev_page">上一页\n(音量减)</string>
+    <string name="next_page">下一页\n(音量加)</string>
+    <string name="footer">音量加=下一页，音量减=上一页。\n电脑端运行 receiver.py 后点连接。</string>
+</resources>
