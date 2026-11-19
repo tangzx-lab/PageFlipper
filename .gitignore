@@ -1,0 +1,11 @@
+# 构建产物
+dist/
+build/
+
+# 本地签名证书（含私钥，请勿提交）
+keys/
+
+# 系统与编辑器文件
+*.log
+Thumbs.db
+.DS_Store
