@@ -133,7 +133,7 @@ if (-not (Test-Path $dex)) { Fail "没有生成 classes.dex。" }
 Write-Host "==> 5/5 打包、对齐、签名" -ForegroundColor Cyan
 $unsigned = Join-Path $build "unsigned.apk"
 $aligned = Join-Path $build "aligned.apk"
-& $python.Source $packageScript $resourcesApk $dex $unsigned
+& $python $packageScript $resourcesApk $dex $unsigned
 if ($LASTEXITCODE -ne 0) { Fail "写入 classes.dex 失败。" }
 
 & (Join-Path $bt "zipalign.exe") -f -p 4 $unsigned $aligned
